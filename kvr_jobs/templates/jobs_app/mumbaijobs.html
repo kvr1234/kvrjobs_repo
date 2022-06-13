@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HYD Jobs</title>
+    <link rel="stylesheet" href="{% static "css/kvr_jobs.css" %}">
+    <link rel="stylesheet" href="{% static "css/xyz.css" %}">
+
+</head>
+<body>
+    <h1>mumbai Jobs Information</h1>
+    <img src="{% static "images/mmb1.jpg" %}" alt="Opps No Image Available">
+    <img src="{% static "images/mmb2.jpg" %}" alt="Opps No Image Available">
+    <img src="{% static "images/mmb3.jpg" %}" alt="Opps No Image Available">
+    <hr>
+    {% if jobs_list %}
+    <table border=1>
+        <thead>
+            <th>Date</th>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Eligibility</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </thead>
+     {% for job in jobs_list %}
+        <tr>
+            <td>{{job.date}}</td>
+            <td>{{job.company}}</td>
+            <td>{{job.position}}</td>
+            <td>{{job.eligibility}}</td>
+            <td>{{job.address}}</td>
+            <td>{{job.email}}</td>
+            <td>{{job.phonenumber}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+        <p id ="specialp">No Jobs Found In Mumbai</p>
+    {% endif %}
+</body>
+</html>
+
+
+
+
+
+

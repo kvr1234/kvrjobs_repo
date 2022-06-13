@@ -1,0 +1,44 @@
+body{
+background: url(https://images.unsplash.com/photo-1516054719048-38394ee6cf3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI4fGFOY2FTME1pZERJfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.container{
+margin-top:200px;
+text-align:center;
+}
+.container .jumbotron{
+background:red;
+color:white;
+}
+.jumbotron a{
+background:yellow;
+color:red;
+border:2px solid green;
+}
+h1{
+background:red;
+color:white;
+text-align:center;
+}
+html{
+height:100%;
+}
+img{
+height:200px;
+width:30%;
+margin:1.25%;
+float:left;
+border:1px solid red;
+}
+#specialp{
+color:yellow;
+font-size:50px;
+text-align:center;
+}
+
+
+
+
+
